@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:stretchColumns="1"
+  android:padding="10dip"
+  >
+  <TableRow android:paddingBottom="5dip">
+    <TextView
+      android:text="@string/hello_title"
+      android:paddingRight="10dip"
+      android:gravity="right"
+      android:textStyle="bold"
+    />
+    <TextView
+      android:id="@+id/userName" 
+      android:paddingRight="10dip"
+      android:gravity="right"
+      android:textStyle="bold"
+    />
+  </TableRow>
+</TableLayout>
