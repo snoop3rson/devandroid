@@ -38,6 +38,7 @@ public class MosquitoKillerActivity extends Activity {
 
 		private void playAudio(OnClickListener onClickListener, int music) {
 			// TODO Auto-generated method stub
+			getApplicationContext();
 			MediaPlayer  mp = MediaPlayer.create(context, R.raw.kill);
 			mp.start();
 			
