@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="start">Убить Комара</string>
+   <string name="pause">Надоело Убивать</string>
+   <string name="restart">Заново убивать</string>
+   <string name="about">О программе</string>
+    <string name="app_name">Mosquito Killer</string>
+</resources>

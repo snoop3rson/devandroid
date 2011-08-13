@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mos"
+    >
+    <TextView
+      android:text="Программа Mosquito Killer создана для тех кто часто бывает на отдыхе. Если вам надоели комары, запустите программу и можете спокойно ложиться спать. Ультразвуковые волны будут неслышимы для людей. Если у вас есть домашние животные, то приложения не советуеться включать. Так же если вы будете слушать в наушниках то это может ухудшить ваше состояние"
+      android:layout_width="fill_parent"
+ 	  android:layout_height="wrap_content"
+ 	  />
+</ScrollView>
