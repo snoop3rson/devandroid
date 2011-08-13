@@ -1,5 +1,8 @@
 package mosquito.killer;
 
+
+
+import mosquito.killer.R;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -16,10 +19,11 @@ public class MosquitoKillerActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
+        	
     Button start = (Button)findViewById(R.id.start);
     Button pause = (Button)findViewById(R.id.pause);
     Button restart = (Button)findViewById(R.id.restart);
+    Button about = (Button)findViewById(R.id.about);
     
     start.setOnClickListener(new OnClickListener(){
     	
@@ -30,7 +34,7 @@ public class MosquitoKillerActivity extends Activity {
     	public void onClick(View view)
     	{
     		try{
-    			playAudio(this, R.raw.kill);
+    			playAudio(this, R.raw.music);
     			} catch (Exception e) {
     				e.printStackTrace();
     			}
@@ -38,8 +42,8 @@ public class MosquitoKillerActivity extends Activity {
 
 		private void playAudio(OnClickListener onClickListener, int music) {
 			// TODO Auto-generated method stub
-			getApplicationContext();
-			MediaPlayer  mp = MediaPlayer.create(context, R.raw.kill);
+			context = getApplicationContext();
+			MediaPlayer  mp = MediaPlayer.create(context, R.raw.music);
 			mp.start();
 			
 		}});
@@ -47,6 +51,7 @@ public class MosquitoKillerActivity extends Activity {
     	
     	private Object mediaPlayer;
 		private Object playbackPosition;
+		private Context context;
 
 		public void OnClick(View view)
     	{
@@ -59,7 +64,9 @@ public class MosquitoKillerActivity extends Activity {
 
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			context = getApplicationContext();
+			MediaPlayer  mp = MediaPlayer.create(context, R.raw.music);
+			mp.pause();
 			
 		}});
      restart.setOnClickListener(new OnClickListener(){
@@ -76,6 +83,13 @@ public class MosquitoKillerActivity extends Activity {
     			 ((MediaPlayer) mediaPlayer).start();
     		 }
     	 }});
-    }
-   
-}
+     
+     final Button about1 = (Button) findViewById(R.id.about);
+     about1.setOnClickListener(new View.OnClickListener() {
+     	
+     	public void onClick(View v) {
+     		// TODO Auto-generated method stub
+				setContentView(R.layout.about);
+
+       	}});
+    }}  
