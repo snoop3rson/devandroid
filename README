@@ -22,7 +22,10 @@ public class MosquitoKillerActivity extends Activity {
     
     start.setOnClickListener(new OnClickListener(){
     	
-    	@Override
+    	private Object mediaPlayer;
+		private int playbackPosition;
+
+		@Override
     	public void onClick(View view)
     	{
     		try{
@@ -34,6 +37,8 @@ public class MosquitoKillerActivity extends Activity {
 
 		private void playAudio(OnClickListener onClickListener, int music) {
 			// TODO Auto-generated method stub
+    			playbackPosition = ((MediaPlayer) mediaPlayer).getCurrentPosition();
+    			((MediaPlayer) mediaPlayer).start();
 			
 		}});
     pause.setOnClickListener(new OnClickListener(){
