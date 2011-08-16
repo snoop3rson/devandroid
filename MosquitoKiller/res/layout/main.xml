@@ -16,21 +16,17 @@
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:text="Убить Комара" />
-      <Button
+               <Button
          android:id="@+id/pause"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         android:text="Пауза" />
-      <Button
-         android:id="@+id/restart"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:text="Начать заново" />
+         android:text="Остановить" />
+
            <Button
          android:id="@+id/about"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:text="О программе" />
-         
+         >
    </LinearLayout>
 </ScrollView>
